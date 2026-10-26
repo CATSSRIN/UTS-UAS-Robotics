@@ -526,9 +526,8 @@ BLYNK_WRITE(InternalPinOTA) {
 Pada eksperimen Modul 4, pengujian deployment firmware dilakukan secara langsung dan didokumentasikan dalam tiga bukti visual berikut:
 
 #### Gambar 1: Dashboard Blynk.Air Shipment Management
-![Status Pengiriman Firmware Blynk.Air](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/blynk_air_deployment_finished.png)
+![Status Pengiriman Firmware Blynk.Air](./images/blynk_air_deployment_finished.png)
 
-* **Identifikasi File:** [`blynk_air_deployment_finished.png`](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/blynk_air_deployment_finished.png)
 * **Analisis Data Dashboard:**
   * **Shipment ID:** `51185`
   * **Nama Paket Firmware:** `New Shipping Oct 21, 2026 (blynk-ota-faster-blinkin.ino.bin)`
@@ -542,9 +541,8 @@ Pada eksperimen Modul 4, pengujian deployment firmware dilakukan secara langsung
 ---
 
 #### Gambar 2: Verifikasi Status Perangkat Target (Tooltip Details)
-![Detail Perangkat Terupdate](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/blynk_air_device_updated.jpeg)
+![Detail Perangkat Terupdate](./images/blynk_air_device_updated.jpeg)
 
-* **Identifikasi File:** [`blynk_air_device_updated.jpeg`](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/blynk_air_device_updated.jpeg)
 * **Analisis Data Tooltip:**
   * **Target:** `1 Device`
   * **Updated:** `1 Device (100% Success Rate)`
@@ -553,9 +551,8 @@ Pada eksperimen Modul 4, pengujian deployment firmware dilakukan secara langsung
 ---
 
 #### Gambar 3: Log Serial Monitor ESP32 Saat Proses OTA Berlangsung
-![Log Terminal Serial Monitor Saat Proses OTA](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/esp32_serial_ota_download.jpeg)
+![Log Terminal Serial Monitor Saat Proses OTA](./images/esp32_serial_ota_download.jpeg)
 
-* **Identifikasi File:** [`esp32_serial_ota_download.jpeg`](file:///D:/Github/UTS-UAS-Robotics/UTS/Code%20OTA%20Berbasis%20Blynk/Code%20baru/screenshot/esp32_serial_ota_download.jpeg)
 * **Analisis Terminal Output:**
   * Terlihat pada jendela Serial Monitor Arduino IDE (Baudrate `115200 baud`):
     ```text
