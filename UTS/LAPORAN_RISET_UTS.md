@@ -568,6 +568,25 @@ Pada eksperimen Modul 4, pengujian deployment firmware dilakukan secara langsung
 
 ---
 
+#### Gambar 4: Implementasi Fisik Kit iMCLab ESP32 Pasca-OTA (Validasi Kedip Cepat LED Biru v0.1.1 - Fase Menyala)
+![Hardware Kit iMCLab ESP32 Pasca-OTA (LED Biru ON)](./images/esp32_hardware_ota_updated_blue_on.jpg)
+
+* **Analisis Pengujian Fisik Hardware (Fase LED Biru ON):**
+  * **Kondisi Perangkat:** Kit iMCLab beroperasi secara aktif setelah proses pembaruan firmware nirkabel v0.1.1 melalui Blynk.Air.
+  * **Indikator LED Biru (GPIO 2):** Terlihat memancarkan cahaya biru terang, menandakan bahwa ESP32 berhasil terhubung kembali ke jaringan Wi-Fi dan server cloud Blynk.
+  * **Konfigurasi Modul:** Terpasang modul ESP32 NodeMCU-32S di atas baseboard Kit iMCLab (*Programmable Motor Control*), terhubung dengan aktuator motor DC dan piringan *optical rotary encoder* bercelah putih yang melewati sensor optocoupler (terlihat pancaran sensor hijau aktif).
+
+---
+
+#### Gambar 5: Implementasi Fisik Kit iMCLab ESP32 Pasca-OTA (Validasi Kedip Cepat LED Biru v0.1.1 - Fase Padam)
+![Hardware Kit iMCLab ESP32 Pasca-OTA (LED Biru OFF)](./images/esp32_hardware_ota_updated_blue_off.jpg)
+
+* **Analisis Pengujian Fisik Hardware (Fase LED Biru OFF):**
+  * **Validasi Siklus Kedip Cepat (*Fast Blinking*):** Perbandingan antara Gambar 4 dan Gambar 5 yang diambil secara sekuensial merekam transisi status LED Biru dari fase menyala (HIGH) ke fase padam (LOW).
+  * **Verifikasi Firmware v0.1.1:** Pada firmware awal (v0.1.0), interval kedip LED adalah 500 ms (kedipan lambat). Pada firmware baru (v0.1.1), interval kedip dipersingkat menjadi `blueLedIntervalFast = 150ms`. Hasil rekaman foto fisik ini secara nyata memverifikasi bahwa kode baru telah sukses terpasang dan dieksekusi oleh mikrokontroler di dunia nyata.
+
+---
+
 ## 6. ANALISIS INTEGRATIF & MATRIKS KOMPARASI MODUL
 
 Berdasarkan empat eksperimen yang telah diselesaikan, berikut adalah evaluasi komparatif multi-parameter antara tiap modul:
